@@ -248,12 +248,59 @@ main {
   row-gap: 70px;
 }
 
+.product__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border-top: 1px solid #fbfbfb;
+  transition: 0.3s ease;
+}
+
+.product__wrapper:hover {
+  border-top: 1px solid #46a358;
+}
+
+.product__wrapper:hover .feature-bar {
+  opacity: 1;
+}
+
+.product__batch {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  padding: 7px 8px 6px 9px;
+  font-family: "Cera-pro-med";
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+  background-color: #46a358;
+}
+
 .product__card {
   width: 30.71%;
 }
 
 .product__image {
   width: 100%;
+}
+
+/* Feature bar */
+.feature-bar {
+  position: absolute;
+  bottom: 7px;
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.feature-bar button {
+  height: 35px;
+  width: 35px;
+  border-radius: 4px;
+  border: none;
+  background-color: #fff;
 }
 
 /* Product description */
@@ -265,12 +312,24 @@ main {
 }
 
 /* Product price */
-.product__price {
+.product__price-wrapper {
   margin-top: 6px;
+  display: flex;
+  gap: 16px;
+}
+
+.product__price {
   font-family: "Cera-pro-bold";
   font-size: 18px;
   line-height: 89%;
   color: #46a358;
+}
+
+.product__actual-price {
+  font-size: 18px;
+  line-height: 89%;
+  color: #a5a5a5;
+  text-decoration: line-through;
 }
 
 /* PAGINATION */
