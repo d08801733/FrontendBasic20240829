@@ -686,16 +686,24 @@ footer {
 }
 
 .footer__input input {
-  width: 76%;
-  padding: 12px 86px 12px 11px;
+  width: 100%;
+  padding: 12px 0 12px 11px;
   font-size: 14px;
   line-height: 114%;
-  color: #acacac;
   background: #fff;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
   border: none;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
+}
+
+.footer__input input:focus {
+  outline: none;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+.footer__input input::placeholder {
+  color: #acacac;
 }
 
 .footer__input button {
@@ -769,8 +777,19 @@ footer {
   gap: 10px;
 }
 
-.footer__social-media img {
-  cursor: pointer;
+.footer__social-media-item {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #46a35833;
+  border-radius: 4px;
+}
+
+.footer__social-media-item img {
+  max-width: 18px;
+  height: 16px;
 }
 
 .footer__payment {
