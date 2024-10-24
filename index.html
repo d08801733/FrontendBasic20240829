@@ -12,7 +12,9 @@
     <div class="container">
       <header>
         <div class="header__logo">
-          <img src="icons/header/logo.svg" alt="Greenshop logo" />
+          <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg">
+            <use href="/icons/sprite.svg#logo-icon"></use>
+          </svg>
         </div>
 
         <nav class="header__navbar">
@@ -52,12 +54,24 @@
         </nav>
 
         <div class="header__login">
+          <div class="header__login-icons">
+            <div class="header__icon-wrapper">
+              <svg class="search-icon" xmlns="http://www.w3.org/2000/svg">
+                <use href="/icons/sprite.svg#search-icon"></use>
+              </svg>
+            </div>
+
+            <div class="header__icon-wrapper">
+              <svg class="shop-icon" xmlns="http://www.w3.org/2000/svg">
+                <use href="/icons/sprite.svg#shop-icon"></use>
+              </svg>
+            </div>
+          </div>
+
           <button class="login__button">
-            <img
-              src="icons/header/logout.svg"
-              alt="Logout"
-              class="login__image"
-            />
+            <svg class="login-icon" xmlns="http://www.w3.org/2000/svg">
+              <use href="/icons/sprite.svg#login-icon"></use>
+            </svg>
             <span>Login</span>
           </button>
         </div>
@@ -89,15 +103,70 @@
             <h2 class="sidebar__title">Categories</h2>
 
             <ul class="sidebar__list">
-              <li class="active">House Plants</li>
-              <li>Potter Plants</li>
-              <li>Seeds</li>
-              <li>Small Plants</li>
-              <li>Big Plants</li>
-              <li>Succulents</li>
-              <li>Trerrariums</li>
-              <li>Gardening</li>
-              <li>Accessories</li>
+              <li class="active">
+                House Plants
+                <span>(33)</span>
+              </li>
+              <li>
+                Potter Plants
+                <span>(12)</span>
+              </li>
+              <li>
+                Seeds
+                <span>(65)</span>
+              </li>
+              <li>
+                Small Plants
+                <span>(39)</span>
+              </li>
+              <li>
+                Big Plants
+                <span>(23)</span>
+              </li>
+              <li>
+                Succulents
+                <span>(17)</span>
+              </li>
+              <li>
+                Trerrariums
+                <span>(19)</span>
+              </li>
+              <li>
+                Gardening
+                <span>(13)</span>
+              </li>
+              <li>
+                Accessories
+                <span>(18)</span>
+              </li>
+            </ul>
+
+            <h3>Price Range</h3>
+            <div class="sidebar__price-range">
+              <div class="sidebar__range"></div>
+
+              <p class="sidebar__price">
+                Price:
+                <span class="green-text">$39 - $1230</span>
+              </p>
+
+              <button>Filter</button>
+            </div>
+
+            <h4>Size</h4>
+            <ul class="sidebar__list">
+              <li>
+                Small
+                <span>(119)</span>
+              </li>
+              <li>
+                Medium
+                <span>(86)</span>
+              </li>
+              <li>
+                Large
+                <span>(78)</span>
+              </li>
             </ul>
           </div>
 
@@ -418,7 +487,9 @@
         <button class="pagination__button">3</button>
         <button class="pagination__button">4</button>
         <button class="pagination__button">
-          <img src="icons/pagination/arrow.svg" alt="Arrow" />
+          <svg class="next-page-arrow-icon" xmlns="http://www.w3.org/2000/svg">
+            <use href="/icons/sprite.svg#next-page-arrow-icon"></use>
+          </svg>
         </button>
       </div>
 
@@ -438,7 +509,12 @@
 
             <button class="info__btn">
               <span>Find More</span>
-              <img src="icons/info/arrow.svg" alt="Arrow" />
+              <svg
+                class="find-more-arrow-icon"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="/icons/sprite.svg#find-more-arrow-icon"></use>
+              </svg>
             </button>
           </div>
         </div>
@@ -458,7 +534,12 @@
 
             <button class="info__btn">
               <span>Find More</span>
-              <img src="icons/info/arrow.svg" alt="Arrow" />
+              <svg
+                class="find-more-arrow-icon"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="/icons/sprite.svg#find-more-arrow-icon"></use>
+              </svg>
             </button>
           </div>
         </div>
@@ -492,7 +573,12 @@
 
               <a href="#" class="blog__read-more">
                 <span>Read More</span>
-                <img src="icons/blog/arrow.svg" alt="Arrow" />
+                <svg
+                  class="read-more-arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use href="/icons/sprite.svg#read-more-arrow-icon"></use>
+                </svg>
               </a>
             </div>
           </div>
@@ -509,7 +595,12 @@
 
               <a href="#" class="blog__read-more">
                 <span>Read More</span>
-                <img src="icons/blog/arrow.svg" alt="Arrow" />
+                <svg
+                  class="read-more-arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use href="/icons/sprite.svg#read-more-arrow-icon"></use>
+                </svg>
               </a>
             </div>
           </div>
@@ -531,7 +622,14 @@
 
               <a href="#" class="blog__read-more selected">
                 <span>Read More</span>
-                <img src="icons/blog/green-arrow.svg" alt="Arrow" />
+                <svg
+                  class="read-more-green-arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use
+                    href="/icons/sprite.svg#read-more-green-arrow-icon"
+                  ></use>
+                </svg>
               </a>
             </div>
           </div>
@@ -551,7 +649,12 @@
 
               <a href="#" class="blog__read-more">
                 <span>Read More</span>
-                <img src="icons/blog/arrow.svg" alt="Arrow" />
+                <svg
+                  class="read-more-arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use href="/icons/sprite.svg#read-more-arrow-icon"></use>
+                </svg>
               </a>
             </div>
           </div>
@@ -622,11 +725,20 @@
 
         <div class="footer__middle">
           <div class="footer__logo">
-            <img src="icons/footer/logo.svg" alt="Greenshop logo" />
+            <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg">
+              <use href="/icons/sprite.svg#logo-icon"></use>
+            </svg>
           </div>
 
           <div class="footer__location">
-            <img src="icons/footer/location.svg" alt="Location" />
+            <svg
+              class="location-icon"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use href="/icons/sprite.svg#location-icon"></use>
+            </svg>
 
             <p>
               70 West Buckingham Ave. <br />
@@ -635,13 +747,27 @@
           </div>
 
           <div class="footer__message">
-            <img src="icons/footer/email.svg" alt="Email" />
+            <svg
+              class="email-icon"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use href="/icons/sprite.svg#email-icon"></use>
+            </svg>
 
             <p>contact@greenshop.com</p>
           </div>
 
           <div class="footer__calling">
-            <img src="icons/footer/phone.svg" alt="Phone" />
+            <svg
+              class="phone-icon"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use href="/icons/sprite.svg#phone-icon"></use>
+            </svg>
 
             <p>+88 01911 717 490</p>
           </div>
@@ -689,19 +815,58 @@
 
             <div class="footer__social-media">
               <a href="#" class="footer__social-media-item">
-                <img src="icons/footer/facebook.svg" alt="Facebook" />
+                <svg
+                  class="facebook-icon"
+                  viewBox="0 0 8 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use href="/icons/sprite.svg#facebook-icon"></use>
+                </svg>
               </a>
+
               <a href="#" class="footer__social-media-item">
-                <img src="icons/footer/instagram.svg" alt="Instagram" />
+                <svg
+                  class="instagram-icon"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use href="/icons/sprite.svg#instagram-icon"></use>
+                </svg>
               </a>
+
               <a href="#" class="footer__social-media-item">
-                <img src="icons/footer/twitter.svg" alt="Twitter" />
+                <svg
+                  class="twitter-icon"
+                  viewBox="0 0 16 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use href="/icons/sprite.svg#twitter-icon"></use>
+                </svg>
               </a>
+
               <a href="#" class="footer__social-media-item">
-                <img src="icons/footer/linkedin.svg" alt="LinkedIn" />
+                <svg
+                  class="linkedin-icon"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use href="/icons/sprite.svg#linkedin-icon"></use>
+                </svg>
               </a>
+
               <a href="#" class="footer__social-media-item">
-                <img src="icons/footer/youtube.svg" alt="YouTube" />
+                <svg
+                  class="youtube-icon"
+                  viewBox="0 0 19 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use href="/icons/sprite.svg#youtube-icon"></use>
+                </svg>
               </a>
             </div>
 
